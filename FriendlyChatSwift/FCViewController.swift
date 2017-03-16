@@ -56,9 +56,9 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: Life Cycle
 
     override func viewDidLoad() {
-        //self.signedInStatus(isSignedIn: true)
+        // Handle what users see when view loads
+
         configureAuth()
-        // TODO: Handle what users see when view loads
 
     }
 
@@ -70,7 +70,7 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: Config
 
     func configureAuth() {
-        // TODO: configure firebase authentication
+        // Configure firebase authentication
         FUIAuth.defaultAuthUI()?.providers = [FUIGoogleAuth()]
         // list for  changes in authorization state
         _authHandle = FIRAuth.auth()?.addStateDidChangeListener {
@@ -99,7 +99,7 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
     }
 
     func configureDatabase() {
-        // TODO: configure database to sync messages
+        // Configure database to sync messages
         ref = FIRDatabase.database().reference()
         _refHandle = ref.child("messages").observe(.childAdded) { (snapshot: FIRDataSnapshot) in
             self.messages.append(snapshot)
@@ -109,12 +109,12 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
     }
 
     func configureStorage() {
-        // TODO: configure storage using your firebase storage
+        // Configure storage using your firebase storage
         storageRef = FIRStorage.storage().reference()
     }
 
     deinit {
-        // TODO: set up what needs to be deinitialized when view is no longer being used
+        // Set up what needs to be deinitialized when view is no longer being used
         ref.child("messages").removeObserver(withHandle: _refHandle)
         FIRAuth.auth()?.removeStateDidChangeListener(_authHandle)
     }
@@ -161,7 +161,7 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
     // MARK: Send Message
 
     func sendMessage(data: [String:String]) {
-        // TODO: create method that pushes message to the firebase database
+        // Method that pushes message to the firebase database
         var mdata = data
         mdata[Constants.MessageFields.name] = displayName
         ref.child("messages").childByAutoId().setValue(mdata)
