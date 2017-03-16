@@ -38,7 +38,7 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
     fileprivate var _refHandle: FIRDatabaseHandle!
     fileprivate var _authHandle: FIRAuthStateDidChangeListenerHandle!
     var user: FIRUser?
-    var displayName = "Anonymous"
+    var displayName = "Anonymous" // Default Username if none provided
 
     // MARK: Outlets
 
