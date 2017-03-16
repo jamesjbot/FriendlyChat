@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "f6154b421f205d6f3f39158e3d9b913f"
-build_time: [538912725, 535772000]
+options: "cde5d76fc0bcafd71da536147a8c5bd7"
+build_time: [542939036, 743881000]
 inputs:
-  "/Users/jamesjongs/Downloads/ios-nd-firebase-master/FriendlyChat/FriendlyChatSwift/FCViewController.swift": [538912719, 0]
-  "/Users/jamesjongs/Downloads/ios-nd-firebase-master/FriendlyChat/FriendlyChatSwift/AppDelegate.swift": [538589038, 0]
-  "/Users/jamesjongs/Downloads/ios-nd-firebase-master/FriendlyChat/FriendlyChatSwift/Constants.swift": [533148590, 0]
+  "/Users/jamesjongs/Desktop/Projects/FriendlyChat/FriendlyChatSwift/FCViewController.swift": [542932003, 0]
+  "/Users/jamesjongs/Desktop/Projects/FriendlyChat/FriendlyChatSwift/AppDelegate.swift": [542932003, 0]
+  "/Users/jamesjongs/Desktop/Projects/FriendlyChat/FriendlyChatSwift/Constants.swift": [542932003, 0]
