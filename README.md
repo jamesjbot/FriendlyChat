@@ -13,15 +13,16 @@ This is a test program to explore some of Google Firebase's API
 
    Download and run in the simulator.  
    Create a sign in or login with facebook.  
-   Send a message you should receive it back. 
+   Send a message you should receive it back.  
+   Ideally you would have another client open on another computer or a device and see the message sent to the other device in realtime. 
 
 ## How to set up the dev environment
   
-   Download the app.
-   On the command line open the FriendlyChat folder.
-   If you don't have cocoapods installed, install it now `gem install cocoapods`.
-   Then run the command `pod install`.
-   Open the file called: FriendlyChatSwift.xcworkspace.
+   Download the app.  
+   On the command line open the FriendlyChat folder.  
+   If you don't have cocoapods installed, install it now `gem install cocoapods`.  
+   Then run the command `pod install`.  
+   Open the file called: FriendlyChatSwift.xcworkspace.  
    Now you can run the app in Xcode's simulator.  
 
 ## How to ship a change
