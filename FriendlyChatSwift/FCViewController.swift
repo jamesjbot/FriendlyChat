@@ -57,8 +57,9 @@ class FCViewController: UIViewController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         // Handle what users see when view loads
-
         configureAuth()
+        // Allow textfield to move up with keyboard
+        subscribeToKeyboardNotifications()
 
     }
 
@@ -266,7 +267,6 @@ extension FCViewController: UITableViewDelegate, UITableViewDataSource {
         cell!.textLabel?.text = name + ": " + text
         cell!.imageView?.image = self.placeholderImage
         return cell!
-        // TODO: update cell to display message data
     }
 
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
